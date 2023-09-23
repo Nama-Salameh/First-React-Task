@@ -33,7 +33,7 @@ margin-left: 10px;
 }
 .user-div {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .div--search {

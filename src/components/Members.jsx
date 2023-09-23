@@ -1,6 +1,6 @@
 import "font-awesome/css/font-awesome.min.css";
-import checkedImage from "./checked.png";
-import "./App.css";
+import checkedImage from "../assets/checked.png";
+import "./../App.css";
 export default function Members(name) {
   const { memberName } = name;
   return (

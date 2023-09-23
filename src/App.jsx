@@ -1,4 +1,4 @@
-import FilterMembers from "./FilterMembers";
+import FilterMembers from "./components/FilterMembers";
 export default function App() {
   return (
     <div className="div--App">

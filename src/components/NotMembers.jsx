@@ -1,5 +1,6 @@
 import "font-awesome/css/font-awesome.min.css";
-import "./App.css";
+import "./../App.css";
+
 export default function Members(name) {
   const { memberName } = name;
   return (
