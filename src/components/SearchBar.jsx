@@ -1,7 +1,7 @@
 import "font-awesome/css/font-awesome.min.css";
 import styles from "./../App.module.css";
 
-export default function SearchBar() {
+const SearchBar = () => {
   return (
     <div className={styles.searchBar}>
       <i className={`${styles.searchIcon} fa fa-search`} aria-hidden="true"></i>
@@ -9,3 +9,4 @@ export default function SearchBar() {
     </div>
   );
 }
+export default SearchBar;

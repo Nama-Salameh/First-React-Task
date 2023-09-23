@@ -1,6 +1,6 @@
 import styles from "./../App.module.css";
 
-export default function SubmitButton() {
+const SubmitButton = () =>{
   return (
     <div className={styles.buttons}>
       <button className={styles.cancelButton}>Cancel</button>
@@ -8,3 +8,4 @@ export default function SubmitButton() {
     </div>
   );
 }
+export default SubmitButton;

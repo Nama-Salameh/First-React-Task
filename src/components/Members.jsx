@@ -2,7 +2,7 @@ import "font-awesome/css/font-awesome.min.css";
 import checkedImage from "../assets/checked.png";
 import styles from "./../App.module.css";
 
-export default function Members({ memberInfo }) {
+const Members = ({ memberInfo }) => {
   const { name, isMember } = memberInfo;
 
   if (isMember) {
@@ -31,3 +31,4 @@ export default function Members({ memberInfo }) {
     );
   }
 }
+export default Members;

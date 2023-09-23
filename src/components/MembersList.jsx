@@ -3,7 +3,7 @@ import SeachBar from "./SearchBar";
 import SubmitButton from "./SubmitButtons";
 import styles from "./../App.module.css";
 
-export default function MembersList() {
+const MembersList = () => {
   const members = [
     {
       name: "Carolien Bloeme",
@@ -47,3 +47,4 @@ export default function MembersList() {
     </div>
   );
 }
+export default MembersList;
