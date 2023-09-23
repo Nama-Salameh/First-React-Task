@@ -1,15 +1,16 @@
 import "font-awesome/css/font-awesome.min.css";
 import checkedImage from "../assets/checked.png";
-import "./../App.css";
+import styles from "./../App.module.css";
+
 export default function Members(name) {
   const { memberName } = name;
   return (
-    <div className="member-div">
-      <div className="user-div">
-        <i className="fa fa-user user-icon"></i>
+    <div className={styles.member}>
+      <div className={styles.personsInfo}>
+        <i className={`${styles.userIcon} fa fa-user`}></i>
         <p>{memberName}</p>
       </div>
-      <img src={checkedImage} alt="Ths checked" className="image--checked" />
+      <img src={checkedImage} alt="Ths checked" className={styles.checkedImage} />
     </div>
   );
 }

@@ -1,18 +1,10 @@
-export function CancelButton(){
-    return (
-        <button className="button--cancel">Cancel</button>
-    )
-}
-export function SaveButton(){
-    return (
-        <button className="button--save">SAVE</button>
-    )
-}
-export default function SubmitButton(){
-    return (
-        <div className="button--submit">
-        <CancelButton/>
-        <SaveButton/>
-        </div>
-    );
+import styles from "./../App.module.css";
+
+export default function SubmitButton() {
+  return (
+    <div className={styles.buttons}>
+      <button className={styles.cancelButton}>Cancel</button>
+      <button className={styles.saveButton}>SAVE</button>
+    </div>
+  );
 }

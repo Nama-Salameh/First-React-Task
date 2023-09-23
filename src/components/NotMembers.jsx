@@ -1,15 +1,15 @@
 import "font-awesome/css/font-awesome.min.css";
-import "./../App.css";
+import styles from "./../App.module.css";
 
 export default function Members(name) {
   const { memberName } = name;
   return (
-    <div className="member-div notMember-div">
-      <div className="user-div">
-        <i className="fa fa-user user-icon user-icon-notMember"></i>
+<div className={`${styles.member} ${styles.notMember}`}>
+      <div className={styles.personsInfo}>
+      <i className={`${styles.userIcon} fa fa-user`}></i>
         <p>{memberName}</p>
       </div>
-      <div className="empty-circle"> </div>
+      <div className={styles.emptyCircle}> </div>
     </div>
   );
 }

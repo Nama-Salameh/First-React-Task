@@ -2,12 +2,13 @@ import Members from "./Members";
 import NotMembers from "./NotMembers";
 import SeachBar from "./SearchBar";
 import SubmitButton from "./SubmitButtons";
+import styles from "./../App.module.css";
 
 export default function FilterMembers() {
 
   return (
-    <div className="div--filter--Container">
-      <div className="div--filter">
+    <div className={styles.membersContainer}>
+      <div className={styles.membersList}>
         <SeachBar />
         <NotMembers memberName="Carolien Bloeme" />
         <Members memberName="Sun Jun" />
