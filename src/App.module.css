@@ -1,29 +1,29 @@
 .appContainer {
-margin: 0;
-font-size: 20px;
-margin-left: 10px;
+  margin: 0;
+  font-size: 20px;
+  margin: 10px;
 }
-.membersContainer{
+.membersContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 15px;
 }
-.membersList{
+.membersList {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 13px;
 }
-.member{
+.member {
   width: 1000px;
   height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #e0dfdf ;
+  border: 1px solid #e0dfdf;
   border-radius: 7px;
   padding: 10px;
   margin: 5px;
@@ -31,18 +31,18 @@ margin-left: 10px;
 .notMember {
   color: #b2b2b2;
 }
-.personsInfo{
+.personsInfo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.searchBar{
+.searchBar {
   width: 1000px;
   height: 30%;
   margin: 5px;
   margin-bottom: 25px;
   padding: 10px;
-  border-bottom: 1px solid #e0dfdf ;
+  border-bottom: 1px solid #e0dfdf;
 }
 .searchInput {
   border-style: none;
@@ -73,29 +73,82 @@ margin-left: 10px;
   border: 2px solid #c6c5c5;
 }
 
-.buttons{
+.buttonsContainer {
+  width: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.cancelButton{
- width: 150px;
- height: 45px;
- color : #d3d0d0 ;
- border: #d3d0d0 solid 1px;
- border-radius: 6px;
- background-color: white;
- font-size: 19px;
- margin-right : 300px;
-}
-.saveButton{
+.cancelButton,
+.saveButton {
   width: 150px;
   height: 45px;
-  color : white;
-  border-style: none;
   border-radius: 6px;
+  font-size: 19px;
+}
+.cancelButton {
+  color: #d3d0d0;
+  border: #d3d0d0 solid 1px;
+  background-color: white;
+  margin-right: 300px;
+}
+.saveButton {
+  color: white;
+  border-style: none;
   -webkit-box-shadow: 0px 6px 6px rgba(30, 81, 223, 0.64);
   background: linear-gradient(to right, #61adfe, #3654fd);
-  font-size: 19px;
+}
+
+@media (min-width: 1500px) {
+  .member,
+  .searchBar,
+  .buttonsContainer {
+    width: 1650px;
+  }
+}
+@media (min-width: 1250px) {
+  .member,
+  .searchBar,
+  .buttonsContainer {
+    width: 1200px;
+  }
+}
+@media (max-width: 1110px) {
+  .member,
+  .searchBar,
+  .buttonsContainer {
+    width: 800px;
+  }
+}
+
+@media (max-width: 850px) {
+  .member,
+  .searchBar,
+  .buttonsContainer {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .member,
+  .searchBar {
+    width: 400px;
+  }
+  .buttonsContainer {
+    width: 100%;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+  }
+  .cancelButton{
+    margin-bottom : 20px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .member,
+  .searchBar{
+    width: 200px;
+  }
 }
